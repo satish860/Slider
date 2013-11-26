@@ -5,8 +5,7 @@ board.on('ready', function () {
     var button = johnnyfive.Button(7);
     var led = johnnyfive.Led(13);
     button.on('hold', function () {
-        
-        led.on();
+        console.log('button kept in hold');
     });
 
     button.on('up', function () {
